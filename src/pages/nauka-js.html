@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class= "main--grid">
+      <header class="navigation--grid">
+        <nav class="navigation__content--grid navigation__content--js">
+          <a class="navigation__link--grid" href="index.html">strona domowa</a>
+          <a class="navigation__link--grid" href="nauka-html.html">nauka HTML</a>
+          <a class="navigation__link--grid" href="nauka-css.html">nauka CSS</a>
+          <a class="navigation__link--grid" href="nauka-js.html">nauka JS</a>
+          <a class="navigation__link--grid" href="form.html">formularz</a>
+        </nav>
+        <button class="hamburger hamburger--js">menu</button>
+      </header>
+    
+
+    
+
+    <header class="header--grid">
+      <h1 class="header__tittle--grid">Nauka JS</h1>
+      <img
+        class="header__image--grid"
+        src="../assets/img/przykladowy-obrazek-css.png"
+        alt="obrazek praca domowa 2"
+      />
+    </header>
+
+   
+        <article class="article__description1">
+          <h2 class="article__heading--gird">Informacje II tygodnia</h2>
+          <ul class="article__list--grid">
+          <li>
+            Style umieszczane są w sekcji &lt;head>&lt;/head>
+          </li>
+          <li>
+            Tag {atrubut: wartość;} - stylowanie za pomocą obiektów. Odnosi się
+            do wszystkich elementów o tym samym tagu.
+          </li>
+        </ul>
+        </article>
+        <article class="article__description2">
+          <h2 class="article__heading--grid">Informacje III tygodnia</h2>
+          <ul class="article__list--grid">
+          <li>
+            <b>&lt;tag style="atrybut:wartość">treść&lt;/tag></b> - Inline style. Styl
+            znajduje się w tagu razem z atrybutem i wartością w pliku html.
+            Odnosi się do pojedynczego przypadku.
+          </li>
+          <li>
+            <b>&lt;tag class="name">treść&lt;/tag></b> - Nadawanie klasy. W pliku CSS
+            można w ten sposób nadać atrybuty każdemu znacznikowi posiadającemu
+            daną klasę. 'Kotwicą' dla klasy w pliku css jest '.' - .name
+            {atrybut:wartość;}
+          </li>
+          <li>
+            <b>&lt;tag id="name">treść&lt;/tag></b> - Nadawanie id. W pliku CSS można w
+            ten sposób nadać atrybuty znacznikowi posiadającemu dane id.
+            'Kotwicą' dla id w pliku css jest '#' - #name {atrybut:wartość;}.
+            Jedno id powinno być przypisane tylko jednemu znacznikowi.
+          </li>
+          <li>
+            <strong>
+              Nazwy klas oraz id zapisujemy kebab-casem.
+            </strong>
+          </li>
+          <li>
+            Do wyszukiwania elementów w css można używać selektorów np. article
+            h3 {atrybut:wartość;}. Zostanie wyszukany h3 znajdujący się w
+            article. Element ścieżki nie musi być bezpośrednim 'rodzicem'
+            znacznika do którego się odnosimy.
+          </li>
+          <li>
+            Należy pamiętać o Specyficzności CSS. Kolejność zczytywania wartości
+            jest następująca: important!, style, Id, class, element. NIE
+            ZAGNIEŻDŻAMY!
+          </li>
+        </ul>
+        </article>
+    
+    <footer class="footer--grid">
+      <p class="footer__text--grid">site by Rafał Orczykowski</p>
+    </footer>
+</main>
+<script src="hamburger.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body--form">
+
+  <header class="navigation">
+    <nav class="navigation__content--form navigation__content--js">
+      <a class="navigation__link" href="index.html">strona domowa</a>
+      <a class="navigation__link" href="nauka-html.html">nauka HTML</a>
+      <a class="navigation__link" href="nauka-css.html">nauka CSS</a>
+      <a class="navigation__link" href="nauka-js.html">nauka JS</a>
+      <a class="navigation__link" href="form.html">formularz</a>
+    </nav>
+  </header>
+
+  <main class="main--form">
+    <h1 class="form__header">mój formularz</h1>
+    <form action="https://dev.cotenfrontend.pl" method="post" class="form">
+      <p>
+        <label class="form__label" for="name">your name:</label>
+        <input class="form__input" value="Rafał" id="name" name="name">
+      </p>
+      <p>
+        <label class="form__label">your last name:
+          <input class="form__input" placeholder="Enter your last name" id="lastName" name="lastName">
+        </label>
+      </p>
+      <p>
+      <fieldset>
+        <legend>Favourite pokemons</legend>
+        <p>
+          <label class="form__label">fire pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="firePokemon" name="firePokemon">
+          </label>
+        </p>
+        <p>
+          <label class="form__label">water pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="waterPokemon" name="waterPokemon">
+          </label>
+        </p>
+        <p>
+          <label class="form__label">plant pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="plantPokemon" name="plantPokemon">
+          </label>
+        </p>
+        <p>
+          <label class="form__label">lightning pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="lightningPokemon" name="lightningPokemon">
+          </label>
+        </p>
+        <p>
+          <label class="form__label">psyhic pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="psyhicPokemon" name="psyhicPokemon">
+          </label>
+        </p>
+      </fieldset>
+    </p>
+      <fieldset>
+        <legend>Best Star Trek series</legend>
+        <p>
+          <label class="form__label--aside">
+            <input name="bestSTSeries" type="radio" value="original series"> original series
+          </label>
+        </p>
+        <p>
+          <label class="form__label--aside">
+            <input name="bestSTSeries" type="radio" value="voyager series"> voyager series
+          </label>
+        </p>
+        <p>
+          <label class="form__label--aside">
+            <input name="bestSTSeries" type="radio" value="next generation series"> next generation
+          </label>
+        </p>
+
+      </fieldset>
+      <p>
+      <fieldset>
+        <legend>Which manga do you like</legend>
+        <p>
+          <label class="form__label--aside">
+            <input name="manga1" type="checkbox" value="onePiece"> OnePiece
+          </label>
+        </p>
+        <p>
+          <label class="form__label--aside">
+            <input name="manga2" type="checkbox" value="naruto"> Naruto
+          </label>
+        </p>
+        <p>
+          <label class="form__label--aside">
+            <input name="manga3" type="checkbox" value="bleach"> Bleach
+          </label>
+        </p>
+        <p>
+          <label class="form__label--aside">
+            <input name="manga4" type="checkbox" value="soulEater"> Soul Eater
+          </label>
+        </p>
+        <p>
+          <label class="form__label--aside">
+            <input name="manga5" type="checkbox" value="hunterXhunter"> Hunter X Hunter
+          </label>
+        </p>
+
+      </fieldset>
+      </p>
+      <p>
+        <label for="formSelect" class="form__label">Best Harry Potter film</label>
+        <select name="harryPotterBook" id="formSelect" class="form__select">
+          <option value="none"></option>
+          <option value="firstBook">Philosopher's stone</option>
+          <option value="secondBook">Chamber of secrets</option>
+          <option value="thirdBook">Prisoner of Azkaban</option>
+          <option value="fourthBook">The Goblet of Fire</option>
+          <option value="fiftBook">The Order of the Phoenix</option>
+          <option value="sixthBook">The Half-Blood Prince</option>
+          <option value="seventhBook">The Deathly Hallows</option>
+        </select>
+      </p>
+      <p>
+        <label class="form__label"> Why Star Trek is better than Star Wars ;)
+          <textarea name="stBetter"></textarea>
+        </label>
+      </p>
+      <p>
+        <input type="submit" value="send">
+      </p>
+    </form>
+
+  </main>
+</body>
+
+</html>

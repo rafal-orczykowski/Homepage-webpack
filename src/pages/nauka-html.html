@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="body">
+    <header class="navigation">
+      <nav class="navigation__content">
+        <a class="navigation__link" href="index.html">strona domowa</a>
+        <a class="navigation__link" href="nauka-html.html">nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">nauka CSS</a>
+        <a class="navigation__link" href="nauka-js.html">nauka JS</a>
+        <a class="navigation__link" href="form.html">formularz</a>
+      </nav>
+    </header>
+
+    <header class="header">
+      <h1 class="header__tittle">Nauka HTML-a</h1>
+      <img
+        class="header__image"
+        src="../assets/img/przykladowy-obrazek-html.jpg"
+        alt="obrazek praca domowa 2"
+      />
+    </header>
+
+    <main class="main">
+      <article class="article">
+        <h2 class="article__heading">Znaczniki II tygodnia</h2>
+        <ul class="article__list">
+          <li><b>! + TAB</b> - tworzy szkielet strony</li>
+          <li>
+            <b>&lt;body>&lt;/body></b> - wszystko co znajduje sie w body jest
+            wyświetlane w przeglądarce
+          </li>
+
+          <li><b>&lt;main>&lt;/main></b> - główna część pliku/dokumentu</li>
+          <li>
+            <b>&lt;section>&lt;/section></b> - sekcje dokumentu, logiczny
+            podział strony. Każda sekcja musi mieć swój nagłówek
+          </li>
+          <li>
+            <b>&lt;article>&lt;/article></b> - samodzielna grupa większej
+            treści. Może występować samodzielnie. Również powinny mieć nagłówki
+          </li>
+          <li>
+            <b>&lt;header>&lt;/header></b> - Nagłówek dokumentu/pliku, sekcji,
+            artykułu
+          </li>
+          <li>
+            <b>&lt;footer>&lt;/footer></b> - Stopka dokumentu/pliku, sekcji,
+            artykułu
+          </li>
+          <li>
+            <b>&lt;hi1-H6&lt;/hi1-H6></b> - Nagłówki tytułowe dokumentu/pliku,
+            sekcji, artykułu
+          </li>
+        </ul>
+      </article>
+      <article class="article">
+        <h2 class="article__heading">Znaczniki III tygodnia</h2>
+
+        <ul class="article__list">
+          <li><b>&lt;b>&lt;/b></b> - pogrubienie tekstu</li>
+          <li><b>&lt;i>&lt;/i></b> - kursywa</li>
+          <li>
+            <b>&lt;strong>&lt;/strong></b> - pogrubienie tekstu, podkreślenie
+            znaczenia frazy, do której się odnosi
+          </li>
+          <li>
+            <b>&lt;em>&lt;/em></b> - kursywa, zmiana znaczenia tekstu np. ironia
+          </li>
+          <li>
+            <b>&lt;a href="#źródło">&lt;/a></b> - linki i łącza odnoszące się do
+            innych stron lub plików
+          </li>
+          <li>
+            <b>&lt;id> - np &lt;header id="notatki"></b> identyfikuje element
+            dokumentu i pozwala na nawigację po stronie. Do odszukania należy
+            dodać link np. &lt;a href ="#notatki">&lt;/a>
+          </li>
+          <li>
+            <b>&lt;nav>&lt;/nav></b> - nawigacja między stronami lub sekcjami
+            pliku. Znajduje się poza mainem w headerze.
+          </li>
+          <li>
+            <b>&lt;img src="source" alt="czego dotyczy"/></b> - umożliwia
+            umieszczanie grafik
+          </li>
+        </ul>
+      </article>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">website by Rafał Orczykowski</p>
+    </footer>
+  </body>
+</html>
