@@ -17,7 +17,7 @@ flex-direction:column;
 justify-content:flex-start;
 position:relative;
 padding-bottom:60px;
-background: white;
+background: #6432db;
 }
 
 
@@ -76,9 +76,7 @@ width:100%;
 
 &__heading {
   width:1000px;
-  background: rgb(252,183,255);
-  background: linear-gradient(130deg, rgba(252,183,255,1) 0%, rgba(190,255,225,1) 40%, rgba(38,76,113,1) 100%);
-  background-attachment: fixed;
+  background: #9066ec;
   color: white;
   text-align: center;
 }
